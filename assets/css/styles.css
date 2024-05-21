@@ -159,6 +159,8 @@ header h1 {
   flex-wrap: wrap;
   background-color: #596e79;
   max-width: 1450px;
+  border: 10px solid #c7b198;
+  border-radius: 10px;
 }
 
 #projects div .projects-container .card {
