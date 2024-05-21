@@ -13,7 +13,8 @@ header {
   display: flex;
   align-items: center;
   background-color: #596e79;
-  padding: 30px;
+  padding: 30px 30px 30px 0;
+  border-bottom: 10px solid #c7b198;
 }
 
 #nav-links ul {
@@ -26,7 +27,7 @@ header {
 }
 
 #nav-links ul li {
-  margin-left: 20px; /* Adjust spacing between list items */
+  margin-left: 20px;
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -34,16 +35,33 @@ header {
   font-style: normal;
 }
 
-h1 {
-  margin-right: auto; /* Pushes the h1 to the left as much as possible */
+#nav-links ul li a {
+  text-decoration: none;
+  color: #c7b198;
+  border-bottom: 5px solid #c7b198;
+}
+
+#nav-links ul li a:hover {
+  color: orangered;
+  border-bottom: 5px solid orangered;
+}
+
+header h1 {
+  margin-right: auto;
   margin-top: 20px;
-  margin-left: 30px;
+  /* margin-left: 30px; */
   font-size: 4rem;
 
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  font-size: 4rem;
+
+  padding: 20px 20px 20px 150px;
+  background-color: #c7b198;
+  color: #596e79;
+  border-radius: 7px;
 }
 
 /* ------- SUBTITLE STYLING  ------- */
@@ -55,12 +73,15 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 10px solid #c7b198;
+}
 
+.subtitle h2 {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 /* ------- ABOUT ME STYLING  ------- */
