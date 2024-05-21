@@ -163,6 +163,7 @@ header h1 {
 
 #projects div .projects-container .card {
   margin: 30px;
+  border: 7px solid #c7b198;
 }
 
 #projects div .projects-container .card-body {
