@@ -184,3 +184,52 @@ h1 {
 #projects div .projects-container .card-body a:hover {
   background-color: #f0ece2;
 }
+
+/* ------- CONTACT STYLING  ------- */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 200px;
+  margin-top: 50px;
+  background-color: #596e79;
+  border-top: 10px solid #c7b198;
+  /* margin-left: -30px; */
+}
+
+#contact h2 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+#contact ul {
+  display: flex;
+  align-self: center;
+}
+
+#contact ul li {
+  list-style: none;
+}
+
+#contact ul li a {
+  text-decoration: none;
+  margin: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.5rem;
+  margin-top: 20px;
+  border-bottom: 5px solid #c7b198;
+  color: #c7b198;
+}
+
+#contact ul li a:hover {
+  color: orangered;
+  border-bottom: 5px solid orangered;
+}
