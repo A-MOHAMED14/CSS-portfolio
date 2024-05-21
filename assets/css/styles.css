@@ -7,6 +7,8 @@ body {
   background-color: #dfd3c3;
 }
 
+/* ------- NAVBAR STYLING  ------- */
+
 header {
   display: flex;
   align-items: center;
@@ -42,4 +44,21 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+}
+
+/* ------- SUBTITLE STYLING  ------- */
+
+.subtitle {
+  /* background-color: orangered; */
+  background-image: url("../images/landscape.jpg");
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
 }
