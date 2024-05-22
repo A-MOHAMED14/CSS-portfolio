@@ -78,9 +78,9 @@ header {
 /* ------- SUBTITLE STYLING  ------- */
 
 .subtitle {
-  /* background-color: orangered; */
   background-image: url("../images/landscape.jpg");
-  height: 200px;
+  background-size: cover;
+  height: 15rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +92,8 @@ header {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 4rem;
+  font-size: 5rem;
+  color: var(--slate-gray);
 }
 
 /* ------- ABOUT ME STYLING  ------- */
