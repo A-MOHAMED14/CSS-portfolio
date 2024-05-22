@@ -122,6 +122,8 @@ header h1 {
 #about-me img {
   float: right;
   margin-left: 150px;
+  border: 7px solid #596e79;
+  padding: 15px;
 }
 
 /* ------- PROJECTS STYLING  ------- */
