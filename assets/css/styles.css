@@ -1,34 +1,63 @@
+:root {
+  --alabaster: #f0ece2;
+  --bone: #dfd3c3;
+  --pale-Taupe: #c7b198;
+  --slate-gray: #596e79;
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 
 body {
-  background-color: #dfd3c3 !important;
+  background-color: var(--bone) !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--slate-gray);
 }
 
 /* ------- HEADER/NAVBAR STYLING  ------- */
 
 header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  background-color: #596e79;
-  padding: 30px 30px 30px 0;
-  border-bottom: 10px solid #c7b198;
+  background-color: var(--slate-gray);
+  /* padding: 30px 30px 30px 0; */
+  padding: 3rem 3rem 3rem 0;
+  border-bottom: 10px solid var(--pale-Taupe);
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 4rem;
+
+  padding: 20px 20px 20px 150px;
+  background-color: var(--pale-Taupe);
+  color: var(--slate-gray);
+  border-radius: 7px;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 #nav-links ul {
+  display: flex;
+  flex-direction: row;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  margin-top: 20px;
-  margin-right: 30px;
 }
 
 #nav-links ul li {
   margin-left: 20px;
   font-size: 2rem;
+
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -37,31 +66,13 @@ header {
 
 #nav-links ul li a {
   text-decoration: none;
-  color: #c7b198;
-  border-bottom: 5px solid #c7b198;
+  color: var(--pale-Taupe);
+  border-bottom: 5px solid var(--pale-Taupe);
 }
 
 #nav-links ul li a:hover {
   color: orangered;
   border-bottom: 5px solid orangered;
-}
-
-header h1 {
-  margin-right: auto;
-  margin-top: 20px;
-  /* margin-left: 30px; */
-  font-size: 4rem;
-
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 4rem;
-
-  padding: 20px 20px 20px 150px;
-  background-color: #c7b198;
-  color: #596e79;
-  border-radius: 7px;
 }
 
 /* ------- SUBTITLE STYLING  ------- */
@@ -261,54 +272,3 @@ header h1 {
 }
 
 /* Responsive web page optimised for small mobile devices with a viewport width of 576 pixels. */
-
-@media (max-width: 576px) {
-  /* ------- HEADER/NAVBAR RESPONSIVE STYLING  ------- */
-
-  header {
-    flex-direction: column;
-    width: 100vb;
-  }
-
-  #nav-links ul {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #nav-links ul li {
-    margin: 10px 0;
-  }
-
-  /* ------- SUBTITLE RESPONSIVE STYLING  ------- */
-  .subtitle {
-    width: 100vb;
-  }
-
-  /* ------- ABOUT ME RESPONSIVE STYLING  ------- */
-  #about-me {
-    width: 100vb;
-    flex-direction: column;
-    margin-left: 0;
-  }
-
-  #about-me div {
-    align-items: center;
-  }
-
-  #about-me img {
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #about-me p {
-    width: 700px;
-    font-size: 2rem;
-  }
-
-  #about-me h2 {
-    font-size: 4rem;
-  }
-}
