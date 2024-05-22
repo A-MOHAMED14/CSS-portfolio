@@ -148,7 +148,7 @@ header {
   justify-content: center;
   align-items: center;
   border: 7px solid var(--slate-gray);
-  padding: 15px;
+  padding: 5px;
 }
 
 .about-me-container {
@@ -162,7 +162,7 @@ header {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-bottom: 30px;
   text-decoration: underline var(--slate-gray);
 }
@@ -172,7 +172,7 @@ header {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -198,9 +198,9 @@ header {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-bottom: 30px;
-  border-bottom: 5px solid #596e79;
+  border-bottom: 5px solid var(--slate-gray);
 }
 
 #projects div .projects-container {
@@ -209,15 +209,15 @@ header {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #596e79;
+  background-color: var(--slate-gray);
   max-width: 1450px;
-  border: 10px solid #c7b198;
+  border: 10px solid var(--pale-Taupe);
   border-radius: 10px;
 }
 
 #projects div .projects-container .card {
   margin: 30px;
-  border: 7px solid #c7b198;
+  border: 7px solid var(--pale-Taupe);
 }
 
 #projects div .projects-container .card-body {
@@ -245,7 +245,7 @@ header {
 
 #projects div .projects-container .card-body a {
   text-decoration: none;
-  border: 3px solid #596e79;
+  border: 3px solid var(--slate-gray);
   border-radius: 10px;
   padding: 10px;
   margin: 5px;
@@ -258,56 +258,136 @@ header {
 }
 
 #projects div .projects-container .card-body a:hover {
-  background-color: #f0ece2;
+  background-color: var(--alabaster);
 }
 
 /* ------- CONTACT STYLING  ------- */
 
+footer {
+  background-color: var(--slate-gray);
+  border-top: 10px solid var(--pale-Taupe);
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
 #contact {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 200px;
-  margin-top: 50px;
-  background-color: #596e79;
-  border-top: 10px solid #c7b198;
-  /* margin-left: -30px; */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 #contact h2 {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 3rem;
-  margin-top: 20px;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  border-bottom: 7px solid var(--pale-Taupe);
+  padding-bottom: 0.5rem;
 }
 
 #contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  align-self: center;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3rem 0 0 0;
 }
 
 #contact ul li {
-  list-style: none;
+  margin: 0 2rem;
 }
 
 #contact ul li a {
   text-decoration: none;
-  margin: 20px;
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
-  font-style: normal;
-  font-size: 2.5rem;
-  margin-top: 20px;
-  border-bottom: 5px solid #c7b198;
-  color: #c7b198;
+  font-size: 3rem;
+  color: var(--pale-Taupe);
+  padding-bottom: 0.2rem;
 }
 
 #contact ul li a:hover {
   color: orangered;
-  border-bottom: 5px solid orangered;
+  border-bottom: 7px solid orangered;
 }
 
 /* Responsive web page optimised for small mobile devices with a viewport width of 576 pixels. */
+
+@media (max-width: 1050px) {
+  header {
+    flex-direction: column;
+  }
+
+  .logo {
+    font-size: 3rem;
+    padding: 0.5rem;
+  }
+
+  #nav-links ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav-links ul li {
+    margin: 0.5rem 0;
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    height: 8rem;
+  }
+
+  .subtitle h2 {
+    font-size: 3rem;
+  }
+
+  #about-me {
+    margin: 1rem;
+  }
+
+  .about-me-header {
+    font-size: 2.5rem;
+  }
+
+  .about-me-content {
+    font-size: 1rem;
+  }
+
+  #projects h2 {
+    font-size: 2.5rem;
+  }
+
+  .projects-container {
+    padding: 0.5rem;
+  }
+
+  .card {
+    margin: 0.5rem;
+    width: 100%;
+  }
+
+  .card-body h5 {
+    font-size: 1.25rem;
+  }
+
+  .card-body p {
+    font-size: 1rem;
+  }
+
+  #contact h2 {
+    font-size: 3rem;
+  }
+
+  #contact ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  #contact ul li a {
+    font-size: 2rem;
+  }
+}
