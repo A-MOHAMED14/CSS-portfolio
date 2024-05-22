@@ -43,11 +43,19 @@
     <!-- The main content of the webpage, including the About Me, Projects, and Contact Me sections, is all contained within a main tag -->
     <main>
       <!-- Section element used to group related content about myself -->
-      <!-- Div element used as a container for the heading and paragraph -->
+      <!-- Div element used as a container for the heading, paragraph and image-->
+
       <section id="about-me">
-        <div>
-          <h2>About me</h2>
-          <p>
+        <div class="img-container">
+          <img
+            src="./assets/images/thumbnail_IMG_3679.jpg"
+            alt="image of myself, Amin"
+            height="400px"
+          />
+        </div>
+        <div class="about-me-container">
+          <h2 class="about-me-header">About me</h2>
+          <p class="about-me-content">
             Passionate about problem-solving and driven to excel, transforming
             gears from a Mechanical Engineering background to pursue my true
             passion, software development. My decision to join one of UK’s
@@ -60,11 +68,6 @@
             software developer.
           </p>
         </div>
-        <img
-          src="./assets/images/placeholder.png"
-          alt="image of myself, Amin"
-          height="300px"
-        />
       </section>
 
       <!-- Section element used to group related content about my previous work-->
@@ -301,7 +304,7 @@
     <!-- Div element with id "contact" used as a container for the contact section -->
     <footer>
       <div id="contact">
-        <h2>Contact Me</h2>
+        <h2 class="footer-header">Contact Me</h2>
         <ul>
           <li><a href="mailto:amin800@hotmail.co.uk"> Email</a></li>
           <li><a href="https://github.com/A-MOHAMED14">Github</a></li>
