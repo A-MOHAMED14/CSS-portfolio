@@ -23,3 +23,11 @@ To visit the live website, <a href="">click here</a>
 - Linked each application image to its respective deployed application, allowing users to easily access and review the projects.
 
 - Ensured the entire portfolio layout is responsive, adapting to various screen sizes and devices to provide an optimal viewing experience across different platforms.
+
+## Code Image Preview
+
+![code preview snippet](./assets/screenshots/code-screenshot.png)
+
+## Website Image Preview
+
+![website preview snippet](./assets/screenshots/portfolio-screenshot.png)
