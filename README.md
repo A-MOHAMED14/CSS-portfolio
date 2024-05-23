@@ -24,10 +24,10 @@ To visit the live website, <a href="">click here</a>
 
 - Ensured the entire portfolio layout is responsive, adapting to various screen sizes and devices to provide an optimal viewing experience across different platforms.
 
-## Code Preview
-
-![code preview snippet](./assets/screenshots/code-screenshot.png)
-
 ## Website Preview
 
 ![website preview snippet](./assets/screenshots/portfolio-screenshot.png)
+
+## Code Preview
+
+![code preview snippet](./assets/screenshots/code-screenshot.png)
