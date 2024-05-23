@@ -1,14 +1,14 @@
 # 02 Advanced CSS: Portfolio
 
-## Project Goal
+## Project Overview
 
 The goal of this project was to develop a work portfolio showcasing my skills and accomplishments utilising advanced HTML and CSS techniques.
 
-## View Final Project
+## Live Demo
 
 To visit the live website, <a href="">click here</a>
 
-## Completed Tasks for Portfolio
+## Key Features And Accomplishments
 
 - Provided a concise and descriptive document title.
 
@@ -24,10 +24,10 @@ To visit the live website, <a href="">click here</a>
 
 - Ensured the entire portfolio layout is responsive, adapting to various screen sizes and devices to provide an optimal viewing experience across different platforms.
 
-## Code Image Preview
+## Code Preview
 
 ![code preview snippet](./assets/screenshots/code-screenshot.png)
 
-## Website Image Preview
+## Website Preview
 
 ![website preview snippet](./assets/screenshots/portfolio-screenshot.png)
