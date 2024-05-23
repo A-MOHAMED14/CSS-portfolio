@@ -25,7 +25,6 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: var(--slate-gray);
-  /* padding: 30px 30px 30px 0; */
   padding: 3rem 3rem 3rem 0;
   border-bottom: 10px solid var(--pale-Taupe);
 }
@@ -98,46 +97,6 @@ header {
 
 /* ------- ABOUT ME STYLING  ------- */
 
-/* #about-me {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  margin-left: 30px;
-}
-
-#about-me div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 1000px;
-}
-
-#about-me h2 {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  border-bottom: 5px solid #596e79;
-}
-
-#about-me p {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.5rem;
-}
-
-#about-me img {
-  float: right;
-  margin-left: 150px;
-  border: 7px solid #596e79;
-  padding: 15px;
-} */
-
 #about-me {
   display: flex;
   margin: 2rem 3rem;
@@ -149,10 +108,13 @@ header {
   align-items: center;
   border: 7px solid var(--slate-gray);
   padding: 5px;
+  height: 450px;
+  align-self: center;
 }
 
 .about-me-container {
-  flex: 1;
+  height: fit-content;
+  width: fit-content;
   position: relative;
   left: 2%;
 }
@@ -314,7 +276,7 @@ footer {
   border-bottom: 7px solid orangered;
 }
 
-/* Responsive web page optimised for small mobile devices with a viewport width of 576 pixels. */
+/* Responsive web page optimised for various screens and devices, including small mobile devices with a viewport width of 576 pixels. */
 
 @media (max-width: 1050px) {
   header {
@@ -323,7 +285,7 @@ footer {
 
   .logo {
     font-size: 3rem;
-    padding: 0.5rem;
+    padding: 0.75rem;
   }
 
   #nav-links ul {
@@ -340,12 +302,18 @@ footer {
     height: 8rem;
   }
 
+  .subtitle .img-container {
+    height: auto;
+    object-fit: contain;
+  }
+
   .subtitle h2 {
     font-size: 3rem;
   }
 
   #about-me {
-    margin: 1rem;
+    flex-direction: column;
+    margin: 1rem 1.75rem 1rem 0.5rem;
   }
 
   .about-me-header {
@@ -353,10 +321,16 @@ footer {
   }
 
   .about-me-content {
-    font-size: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #projects {
+    margin: 1rem;
   }
 
   #projects h2 {
+    align-self: center;
+    justify-content: center;
     font-size: 2.5rem;
   }
 
